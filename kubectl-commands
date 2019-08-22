@@ -1,5 +1,12 @@
-kubectl get - list resources
+kubectl get <resource> - list resources
+	Eg: kubectl get pods , kubectl get deployments , kubectl get services
 kubectl describe - show detailed information about a resource
 kubectl logs - print the logs from a container in a pod
 kubectl exec - execute a command on a container in a pod
 kubectl proxy - establish connection with a pod
+kubectl describe <resource> 
+	Eg: kubectl describe deployments/kubernetes-bootcamp
+
+
+kubectl scale  - command, followed by the deployment type, name and desired number of instances: 
+	Eg: $ kubectl scale deployments/kubernetes-bootcamp --replicas=4
